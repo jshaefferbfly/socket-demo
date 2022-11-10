@@ -67,9 +67,13 @@ function App() {
               <p
                 key={i}
                 style={{
-                  fontSize: "14px",
-                  color: "black",
+                  fontSize: "16px",
+                  color: "white",
+                  padding: "14px",
                   textAlign: m.origin === socket.id ? "right" : "left",
+                  background: m.origin === socket.id ? "#1084FF" : "#3B3B3D",
+                  marginLeft: m.origin === socket.id ? "30px" : "0px",
+                  marginRight: m.origin === socket.id ? "0px" : "30px",
                 }}
               >
                 {m.message}
